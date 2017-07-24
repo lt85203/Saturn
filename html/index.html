@@ -1,0 +1,70 @@
+<div class="index" ng-controller="myIndex">
+    <!--<header class="swiper-container">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="">推荐</a></li>
+            <li class="swiper-slide"><a href="">玩具</a></li>
+            <li class="swiper-slide"><a href="">图书</a></li>
+            <li class="swiper-slide"><a href="">食品</a></li>
+            <li class="swiper-slide"><a href="">电子产品</a></li>
+            <li class="swiper-slide"><a href="">图书</a></li>
+            <li class="swiper-slide"><a href="">食品</a></li>
+            <li class="swiper-slide"><a href="">视频</a></li>
+            <li class="swiper-slide"><a href="">电子产品</a></li>
+            <li class="swiper-slide"><a href="">音乐</a></li>
+        </ul>
+
+    </header>-->
+    <my-tab></my-tab>
+    <section>
+        <div class="frame" ng-repeat="obj in data4444.datas track by $index">
+            <div class="images">
+                <img ng-src="{{obj.bannerUrl}}" alt="">
+            </div>
+            <div class="title">
+                <p>{{obj.specialDesc}}</p>
+                <p>颠覆传统玩法 | 用孩子的眼光看世界</p>
+                <p>单品 <span>¥68起</span></p>
+            </div>
+            <div class="info">
+                <ul>
+                    <li ng-repeat="obj in obj.proList track by $index">
+                        <img ng-src="{{obj.image}}" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--<div class=" frame
+            ">
+            <div class="images">
+                <img src="../img/tx_25.png" alt="">
+            </div>
+            <div class="title">
+                <p>让孩子赢在起跑线</p>
+                <p>颠覆传统玩法 | 用孩子的眼光看世界</p>
+                <p>单品 <span>¥68起</span></p>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="images">
+                <img src="../img/tx_30.png" alt="">
+            </div>
+            <div class="title">
+                <p>让孩子赢在起跑线</p>
+                <p>颠覆传统玩法 | 用孩子的眼光看世界</p>
+                <p>单品 <span>¥68起</span></p>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="images">
+                <img src="../img/tx_31.png" alt="">
+            </div>
+            <div class="title">
+                <p>让孩子赢在起跑线</p>
+                <p>颠覆传统玩法 | 用孩子的眼光看世界</p>
+                <p>单品 <span>¥68起</span></p>
+            </div>
+        </div>
+        -->
+        <!--<i class="iconfont icon-shangjiantou"></i>-->
+    </section>
+</div>

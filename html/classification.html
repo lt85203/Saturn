@@ -1,0 +1,30 @@
+<div class="classification" ng-controller="myClassification">
+    <!--<header class="swiper-container">
+        <ul class="swiper-wrapper">
+            <a class="swiper-slide" ui-sref="classification({cateId:obj.cateId})" ng-repeat="obj in data track by $index">{{obj.cateName}}</a>
+        </ul>
+    </header>-->
+    <my-tab></my-tab>
+    <section>
+        <div class="frame">
+            <div class="images">
+                <img src="../img/tx_03.png" alt="">
+            </div>
+        </div>
+        <div class="inner">
+            <div class="title" ng-repeat="obj in data1 track by $index">
+                <div class="inner">
+                    <h1>{{obj.cateName}}</h1>
+                    <p>严选材料，精心定制</p>
+                </div>
+                <div class="info">
+                    <div class="image" ng-repeat="str in obj.ptList track by $index ">
+                        <img ng-src="{{str.image}}" alt="">
+                        <h2>{{str.productName}}</h2>
+                        <p>￥{{str.price}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

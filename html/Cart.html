@@ -1,0 +1,106 @@
+<div class="Cart" ng-controller="Cart">
+    <header>
+        <ul>
+            <li>所有商品免邮</li>
+            <li>24小时极速发货</li>
+            <li>14天无忧退款</li>
+        </ul>
+    </header>
+    <section>
+        <div class="inner">
+            <div class="frame">
+                <div class="title">
+                    <div class="first">
+                        <div>
+                            <input type="checkbox" id="checked1">
+                            <label for="checked1"></label>
+                        </div>
+                        <p>萌宝宝家居旗舰店</p>
+                    </div>
+                    <div class="second">
+                        <div class="copy">
+                            <div class="info">
+                                <input type="checkbox" id="check">
+                                <label for="check"></label>
+                            </div>
+                            <div class="info_1">
+                                <input type="checkbox" id="check1">
+                                <label for="check1"></label>
+                            </div>
+                            <div class="shop" style="border-bottom: 1px solid #E0E0E0;"
+                                 ng-repeat="i in list track by $index">
+                                <div class="img">
+                                    <img src="../img/tx_25.png" alt="">
+                                </div>
+                                <div class="words">
+                                    <h2>土星儿童床单</h2>
+                                    <p>卡通床单 200cm x 180cm</p>
+                                    <div class="bottom">
+                                        <div>
+                                            <h4>￥{{i.price*i.count}}.00</h4>
+                                        </div>
+                                        <div>
+                                            <button ng-click="reduce($index)">-</button>
+                                            <p ng-bind="i.count">1</p>
+                                            <button ng-click="add($index)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="first">
+                        <div>
+                            <input type="checkbox" id="checked4">
+                            <label for="checked4"></label>
+                        </div>
+                        <p>萌宝宝家居旗舰店</p>
+                    </div>
+                    <div class="second" style="height: 4.3rem">
+                        <div class="copy">
+                            <div class="info">
+                                <input type="checkbox" id="checked5">
+                                <label for="checked5"></label>
+                            </div>
+                            <div class="shop" ng-repeat="i in list1 track by $index">
+                                <div class="img">
+                                    <img src="../img/tx_25.png" alt="">
+                                </div>
+                                <div class="words">
+                                    <h2>土星儿童床单</h2>
+                                    <p>卡通床单 200cm x 180cm</p>
+                                    <div class="bottom">
+                                        <div>
+                                            <h4>￥{{i.price*i.count}}.00</h4>
+                                        </div>
+                                        <div>
+                                            <button ng-click="reducel($index)">-</button>
+                                            <p ng-bind="i.count">1</p>
+                                            <button ng-click="addl($index)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title_1">
+                    <div class="null"></div>
+                    <div class="first">
+                        <div>
+                            <input type="checkbox" id="checked6" ng-click="all()">
+                            <label for="checked6"></label>
+                        </div>
+                        <p class="Select">全选（3）</p>
+                        <p class="number">总计 <span>¥{{ toll() }}00</span></p>
+                        <div class="account">
+                            <span>结算</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
